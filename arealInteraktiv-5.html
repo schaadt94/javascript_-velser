@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript øvelse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <script>
+        let lenght = prompt("Længde på objekt?");
+        let width = prompt("Bredden på objekt?");
+        let areal = confirm(lenght * width);
+
+        /*  if (lenght + width != null && fornavn + efternavn != "") {
+              alert("Resultatet er  " + areal);
+          } else {
+              alert("Det kan jeg ikke regne ud");
+          }*/
+
+
+        let forfra = confirm("Vil du starte forfra?");
+        if (forfra) {
+            location.reload();
+        }
+
+    </script>
+</body>
+
+</html>
