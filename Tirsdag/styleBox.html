@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript øvelse</title>
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            color: burlywood;
+        }
+
+        .box {
+            display: inline-block;
+            width: 10vw;
+            height: 10vw;
+            border: 1px solid silver;
+            margin: 7vw;
+            transition: all 1s;
+        }
+
+        /*********************/
+    </style>
+
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+
+
+    <script>
+        const box1 = document.querySelector("#box1")
+        const box2 = document.querySelector("#box2")
+        const box3 = document.querySelector("#box3")
+        const box4 = document.querySelector("#box4")
+
+
+        box1.addEventListener("click", box1blue);
+
+        function box1blue() {
+            box1.style.backgroundColor = "lightblue";
+            box1.style.transition = "all 2s";
+            box1.style.width = "2rem";
+        }
+
+        box2.addEventListener("click", box2pink);
+
+        function box2pink() {
+            box2.style.backgroundColor = "pink";
+            box2.style.height = "4rem";
+
+        }
+
+        box3.addEventListener("click", box3green);
+
+        function box3green() {
+            box3.style.backgroundColor = "lightgreen";
+            box3.style.transition = "all 1s";
+            box3.style.borderRadius = "50%";
+        }
+
+        box4.addEventListener("click", box4yellow);
+
+        function box4yellow() {
+            box4.style.backgroundColor = "lightyellow";
+            box4.style.transition = "none";
+            box4.style.border = "dotted 3px"
+            box4.style.height = "40px";
+            box4.style.width = "40px";
+            box4.style.borderRadius = "50px";
+        }
+    </script>
+</body>
+
+</html>
