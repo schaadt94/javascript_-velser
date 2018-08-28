@@ -12,22 +12,27 @@
 
 
     <script>
-        let lenght = prompt("Længde på objekt?");
-        let width = prompt("Bredden på objekt?");
-        let areal = confirm(lenght * width);
-
-        /*  if (lenght + width != null && fornavn + efternavn != "") {
-              alert("Resultatet er  " + areal);
-          } else {
-              alert("Det kan jeg ikke regne ud");
-          }*/
-
-
-        let forfra = confirm("Vil du starte forfra?");
-        if (forfra) {
+        let length = prompt("Længden?"),
+            width = prompt("Bredden?"),
+            besked;
+        //hvis både width og length er tal
+        if (Number(width) && Number(length)) {
+            //udskriv arealet til brugeren
+            alert("Længde: " +
+                length + " meter\nBredden: " +
+                width + " \meter \nArealet: " +
+                length * width + " kvadratmeter");
+        }
+        //ellers
+        else {
+            //udskriv fejlmelding
+            alert("Det kan jeg ikke regne det ud");
+        }
+        //hvis brugeren vil starte forfra
+        if (confirm("Vil du starte forfra?")) {
+            //start forfra
             location.reload();
         }
-
     </script>
 </body>
 
