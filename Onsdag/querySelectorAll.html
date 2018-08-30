@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript øvelse</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .typo {
+            font-family: monospace;
+            color: darkblue;
+            line-height: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>En</h3>
+    ´
+
+    <div class="typo">
+        <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+    </div>
+
+
+    <h3>Lille</h3>
+    <div class="typo">
+        <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+    </div>
+
+    <h3>Bitte</h3>
+
+    <div class="typo">
+        <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+    </div>
+
+
+    <h3>Smule</h3>
+
+    <div class="typo">
+        <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+    </div>
+
+
+    <h3>Tekst</h3>
+
+    <div class="typo">
+        <p>Hella unicorn pinterest organic. Hot chicken activated charcoal chia you probably haven't heard of them slow-carb fingerstache microdosing sartorial four loko etsy yr locavore. Edison bulb trust fund try-hard salvia direct trade tbh.</p>
+    </div>
+
+
+
+
+    <script>
+        let normalTekst = document.querySelector(.typo);
+
+        document.querySelectorAll(".typo").forEach(normalTekst => {
+            normalTekst.addEventListener("click", small);
+        });
+
+        function small() {
+            normalTekst.style.fontSize = "0.5rem";
+        }
+    </script>
+</body>
+
+</html>

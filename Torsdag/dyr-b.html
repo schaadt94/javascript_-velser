@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript øvelse</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!--<div class="dyr">
+        <h1 class="dyr"></h1>
+        <div>dyr<span class="navn"></span></div>
+        <div>type<span class="type"></span></div>
+        <div>levested<span class="levested"></span></div>
+    </div>-->
+
+    <div class="dyr"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            let dyr = {
+                "navn": "elefant",
+                "type": "pattedyr",
+                "levested": "indien"
+            };
+
+            document.querySelector(".dyr").textContent = "En " + dyr.navn + " er et " + dyr.type + ", som lever i " + dyr.levested;
+
+
+        }
+    </script>
+</body>
+
+</html>
